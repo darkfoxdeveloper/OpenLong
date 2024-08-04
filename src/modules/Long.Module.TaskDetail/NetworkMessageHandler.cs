@@ -29,8 +29,8 @@ namespace Long.Module.TaskDetail
                     msg = new MsgTaskStatus();
                     (msg as MsgTaskStatus).QuitQuest(idTask);
                     await msg.ProcessAsync(actor);
-                    return false;
                 }
+                return false;
             }
             else
             {
